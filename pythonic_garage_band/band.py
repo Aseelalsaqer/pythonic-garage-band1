@@ -5,8 +5,16 @@ class Musician:
         self.name = name
         Musician.members.append(self.name)
 
-
+"""
+    A class to represent a musician.
+    Attributes
+    ----------
+    name : str
+    members : list
+   
+    """
 class Band(Musician):
+    
     instances = []
 
     def __init__(self, name, members):
@@ -27,7 +35,15 @@ class Band(Musician):
     def to_list(cls):
         return cls.instances
 
-
+"""
+    A class to represent a Guitarist.
+    Attributes
+    ----------
+    name : str
+       
+    INSTRUMENT : str
+     
+    """
 class Guitarist(Musician):
     def __str__(self):
         return f'My name is {self.name} and I play guitar'
@@ -38,7 +54,15 @@ class Guitarist(Musician):
     def play_solo(self):
         return 'face melting guitar solo'
 
-
+"""
+    A class to represent a Bassist.
+    Attributes
+    ----------
+    name : str
+       
+    INSTRUMENT : str
+ 
+    """
 class Bassist(Musician):
     def __str__(self):
         return f'My name is {self.name} and I play bass'
@@ -49,6 +73,15 @@ class Bassist(Musician):
     def play_solo(self):
         return 'bom bom buh bom'
 
+"""
+    A class to represent a Drummer.
+    Attributes
+    ----------
+    name : str
+      
+    INSTRUMENT : str
+      
+    """
 
 class Drummer(Musician):
     def __str__(self):
